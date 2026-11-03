@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+
+<html class="" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {darkMode: "class", theme: {extend: {colors: {"outline-variant": "#bdcbb4", "primary-container": "#29b91d", "primary-fixed-dim": "#58e245", "surface-container-lowest": "#ffffff", "secondary-fixed-dim": "#91d87e", "secondary-container": "#acf597", "surface-container-highest": "#dce5d4", "inverse-surface": "#2b3327", "primary-fixed": "#77ff61", "on-background": "#161e13", primary: "#026e00", "secondary-fixed": "#acf597", "on-surface-variant": "#3e4a38", "inverse-primary": "#58e245", "on-secondary-container": "#307225", error: "#ba1a1a", "surface-container-high": "#e2ebda", "on-primary": "#ffffff", outline: "#6e7b67", "on-tertiary-fixed": "#3f001c", "surface-tint": "#026e00", "surface-container-low": "#eef7e5", "on-secondary-fixed": "#002200", secondary: "#2a6c20", "tertiary-fixed": "#ffd9e2", "surface-variant": "#dce5d4", "error-container": "#ffdad6", "on-error-container": "#93000a", "on-secondary-fixed-variant": "#0d5307", "on-secondary": "#ffffff", "surface-bright": "#f3fceb", "inverse-on-surface": "#ebf4e2", "on-primary-fixed": "#002200", "tertiary-container": "#ff6fa2", "on-tertiary": "#ffffff", "on-primary-fixed-variant": "#015300", "on-error": "#ffffff", "on-tertiary-container": "#710038", "tertiary-fixed-dim": "#ffb1c7", "on-tertiary-fixed-variant": "#8a0f48", "surface-dim": "#d4ddcc", "surface-container": "#e8f1df", "on-surface": "#161e13", tertiary: "#aa2c60", background: "#f3fceb", surface: "#f3fceb", "on-primary-container": "#014100"}, borderRadius: {DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px"}, spacing: {gutter: "1rem", "space-xl": "2rem", "space-md": "1rem", "gutter-tablet": "1.5rem", "space-xs": "0.25rem", "space-sm": "0.5rem", "margin-tablet": "2rem", margin: "1rem", "space-lg": "1.5rem"}, fontFamily: {"headline-lg": ["Plus Jakarta Sans"], "display-lg": ["Plus Jakarta Sans"], "metric-value": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "body-md": ["Inter"], "headline-md": ["Plus Jakarta Sans"], "display-lg-mobile": ["Plus Jakarta Sans"], "label-md": ["Inter"], "body-sm": ["Inter"], "label-sm": ["Inter"], "body-lg": ["Inter"], headline: ["Inter"], display: ["Inter"], body: ["Inter"], label: ["Inter"]}, fontSize: {"headline-lg": ["2rem", {lineHeight: "2.5rem", letterSpacing: "-0.02em", fontWeight: "700"}], "display-lg": ["3rem", {lineHeight: "3.5rem", letterSpacing: "-0.03em", fontWeight: "800"}], "metric-value": ["1.75rem", {lineHeight: "2rem", letterSpacing: "-0.02em", fontWeight: "700"}], "headline-lg-mobile": ["1.5rem", {lineHeight: "2rem", letterSpacing: "-0.015em", fontWeight: "700"}], "body-md": ["0.875rem", {lineHeight: "1.375rem", fontWeight: "400"}], "headline-md": ["1.25rem", {lineHeight: "1.75rem", letterSpacing: "-0.01em", fontWeight: "600"}], "display-lg-mobile": ["2.25rem", {lineHeight: "2.75rem", letterSpacing: "-0.025em", fontWeight: "800"}], "label-md": ["0.875rem", {lineHeight: "1.25rem", letterSpacing: "0.01em", fontWeight: "600"}], "body-sm": ["0.75rem", {lineHeight: "1.125rem", fontWeight: "400"}], "label-sm": ["0.6875rem", {lineHeight: "0.875rem", letterSpacing: "0.05em", fontWeight: "700"}], "body-lg": ["1rem", {lineHeight: "1.5rem", fontWeight: "400"}]}}}};</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 inset-x-0 z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-16 px-margin flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-xs min-w-0"><button aria-label="Go back" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface hover:bg-surface-container transition-colors -ml-1" onclick="history.back()"><span class="material-symbols-outlined text-[24px]">arrow_back_ios_new</span></button><img alt="Eco Track Brand Logo" class="h-7 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1UhPs6LVxE7YeJkh_DF9uVlE6WnTnnq1SBQqFhnrUg0VLzBaS4eFYvQDJwyQex05UDOQV9t0bSp5JCCGfuNEYccO7TXKZAF1al9Z_kMMf_DAcF7EW5vHrw5m0IEKrZdhjIqCgV0yjEm5AWJaCSEM-tccxdMryiQ-BQNP5sI6K3vG3U6K_jN0pqhkOfvG5hoZN7gcoqNAXdVvZPxqi8oJZn2rS9H9QlA-Lj6j-4xE6ZL"/><h1 class="font-headline-md text-headline-md text-on-surface tracking-tight truncate ml-1">Live Sensor Diagnostic</h1></div><div class="flex items-center gap-space-xs flex-shrink-0"><a class="w-11 h-11 flex items-center justify-center rounded-full hover:opacity-90 transition-opacity" data-path="profile" href="#"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary/20" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnUAPiASoQd-awsJX126yJLKz3Y9qQi0OOZXNC51ktElUpxKc2gp3q6CYTHHrqhfmOgIFWwAd_zSZg2gKTQQ8dtPUSefUUoM-67CG_OIUbqj28kXbl5cr4a49eBPDWxhEGnL1Yw7b21wI5KodJm9neh9iRSNZ7h4zJj52DOVgqTMBhXa2p0mRt2ALWI4frdRepuFp21VfxwXxRGhLRxPwk0GFih3pFJlghT0oI8ws0"/></a></div></div></header><main class="flex flex-col relative w-full pt-16 pb-safe bg-surface min-h-screen"><div class="flex flex-col w-full pb-10">
+<!-- Top Segmented Mode Controller -->
+<div class="px-margin pt-4 pb-2">
+<div class="bg-surface-container-high p-1.5 rounded-xl flex items-center gap-1 shadow-sm">
+<button class="flex-1 py-2.5 px-3 rounded-lg font-label-md text-label-md flex items-center justify-center gap-2 bg-surface text-primary shadow-sm transition-all duration-200" id="tab-btn-air" onclick="switchSensorTab('air')">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">air</span>
+<span>Air Quality Index</span>
+</button>
+<button class="flex-1 py-2.5 px-3 rounded-lg font-label-md text-label-md flex items-center justify-center gap-2 text-on-surface-variant hover:text-on-surface transition-all duration-200" id="tab-btn-waste" onclick="switchSensorTab('waste')">
+<span class="material-symbols-outlined text-[20px]">delete_sweep</span>
+<span>Smart Dry Bin</span>
+</button>
+</div>
+</div>
+<!-- SECTION 1: AIR QUALITY MONITORING -->
+<div class="flex flex-col gap-5 px-margin pt-2 transition-opacity duration-300" id="section-air">
+<!-- Live Telemetry Status Bar -->
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="relative flex h-2.5 w-2.5">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-fixed-dim opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-primary"></span>
+</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">IoT Node #BLR-South-82</span>
+</div>
+<div class="flex items-center gap-1.5 bg-surface-container px-2.5 py-1 rounded-full text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px]">sync</span>
+<span class="font-body-sm text-body-sm">Updated 42s ago</span>
+</div>
+</div>
+<!-- Main Gauge Bento Card -->
+<div class="bg-surface-container-lowest rounded-2xl p-5 shadow-sm flex flex-col items-center relative overflow-hidden">
+<div class="absolute -right-10 -top-10 w-36 h-36 bg-primary-fixed/25 rounded-full blur-2xl pointer-events-none"></div>
+<div class="w-full flex justify-between items-center mb-1">
+<span class="font-label-md text-label-md text-on-surface-variant">Environmental Quality</span>
+<span class="inline-flex items-center gap-1 bg-secondary-container text-on-secondary-container px-2.5 py-0.5 rounded-full font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+          Pristine
+        </span>
+</div>
+<!-- Circular Radial Gauge -->
+<div class="relative w-56 h-56 flex items-center justify-center my-2">
+<svg class="w-full h-full transform -rotate-90" viewbox="0 0 160 160">
+<!-- Background track -->
+<circle cx="80" cy="80" fill="transparent" r="66" stroke="#eaedff" stroke-linecap="round" stroke-width="12"></circle>
+<!-- Active value track (54/100 scaled over 414 circumference -> dasharray approx 155 out of 414) -->
+<circle class="transition-all duration-1000 ease-out" cx="80" cy="80" fill="transparent" r="66" stroke="#00855d" stroke-dasharray="414" stroke-dashoffset="255" stroke-linecap="round" stroke-width="12"></circle>
+<!-- Minor secondary accent glow -->
+<circle cx="80" cy="80" fill="transparent" opacity="0.35" r="54" stroke="#85f8c4" stroke-dasharray="6 4" stroke-width="2"></circle>
+</svg>
+<div class="absolute inset-0 flex flex-col items-center justify-center text-center">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-widest font-semibold">Indoor AQI</span>
+<span class="font-display-lg-mobile text-display-lg-mobile text-on-surface font-extrabold tracking-tight -my-1">54</span>
+<div class="flex items-center gap-1 bg-surface-container-low text-primary px-2.5 py-0.5 rounded-full mt-1">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">eco</span>
+<span class="font-label-md text-label-md font-bold">Good</span>
+</div>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-center max-w-xs">
+        Overall air quality is satisfactory and poses minimal environmental health concern today.
+      </p>
+</div>
+<!-- Smart Advisory Banner -->
+<div class="bg-primary text-on-primary rounded-xl p-4 shadow-sm flex items-start gap-3">
+<div class="w-10 h-10 rounded-lg bg-primary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-on-primary text-[24px]">window</span>
+</div>
+<div class="flex flex-col gap-0.5">
+<span class="font-label-md text-label-md font-bold text-primary-fixed">Optimal Ventilation Window</span>
+<p class="font-body-sm text-body-sm text-on-primary-container leading-relaxed">
+          Air quality is pristine. Natural cross-ventilation recommended until 6:00 PM before highway peak-traffic density increases.
+        </p>
+</div>
+</div>
+<!-- Sensor Metrics Grid -->
+<div>
+<div class="flex justify-between items-center mb-3">
+<h2 class="font-headline-md text-headline-md text-on-surface">Sensor Telemetry</h2>
+<span class="font-label-sm text-label-sm text-outline">5 Connected Probes</span>
+</div>
+<div class="grid grid-cols-2 gap-3">
+<!-- CO2 Card -->
+<div class="col-span-2 bg-surface-container-lowest rounded-xl p-4 shadow-sm flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">co2</span>
+</div>
+<div>
+<div class="flex items-baseline gap-1.5">
+<span class="font-metric-value text-metric-value text-on-surface">480</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-medium">ppm</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Carbon Dioxide Concentration</p>
+</div>
+</div>
+<span class="bg-surface-container-low text-primary px-2.5 py-1 rounded-full font-label-sm text-label-sm font-semibold">
+            Fresh Air
+          </span>
+</div>
+<!-- PM2.5 -->
+<div class="bg-surface-container-lowest rounded-xl p-3.5 shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-md text-label-md text-on-surface-variant font-semibold">PM2.5</span>
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+</div>
+<div>
+<div class="flex items-baseline gap-1">
+<span class="font-metric-value text-metric-value text-on-surface">18</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">µg/m³</span>
+</div>
+<p class="font-body-sm text-body-sm text-primary font-medium mt-0.5">WHO Compliant</p>
+</div>
+</div>
+<!-- PM10 -->
+<div class="bg-surface-container-lowest rounded-xl p-3.5 shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-md text-label-md text-on-surface-variant font-semibold">PM10</span>
+<span class="w-2 h-2 rounded-full bg-secondary-fixed-dim"></span>
+</div>
+<div>
+<div class="flex items-baseline gap-1">
+<span class="font-metric-value text-metric-value text-on-surface">32</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">µg/m³</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Low Fine Dust</p>
+</div>
+</div>
+<!-- Temperature -->
+<div class="bg-surface-container-lowest rounded-xl p-3.5 shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-md text-label-md text-on-surface-variant font-semibold">Temperature</span>
+<span class="material-symbols-outlined text-[18px] text-primary">thermostat</span>
+</div>
+<div>
+<div class="flex items-baseline gap-1">
+<span class="font-metric-value text-metric-value text-on-surface">26.8</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">°C</span>
+</div>
+<p class="font-body-sm text-body-sm text-primary font-medium mt-0.5">Comfort Zone</p>
+</div>
+</div>
+<!-- Humidity -->
+<div class="bg-surface-container-lowest rounded-xl p-3.5 shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-md text-label-md text-on-surface-variant font-semibold">Humidity</span>
+<span class="material-symbols-outlined text-[18px] text-tertiary">water_drop</span>
+</div>
+<div>
+<div class="flex items-baseline gap-1">
+<span class="font-metric-value text-metric-value text-on-surface">56</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">%</span>
+</div>
+<p class="font-body-sm text-body-sm text-tertiary font-medium mt-0.5">Ideal Range</p>
+</div>
+</div>
+</div>
+</div>
+<!-- 24-Hour Air Quality Trend Line -->
+<div class="bg-surface-container-lowest rounded-xl p-4 shadow-sm flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<div>
+<h3 class="font-label-md text-label-md font-bold text-on-surface">24-Hour Diurnal AQI Trend</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Morning clean breezes vs evening commuter variation</p>
+</div>
+<span class="bg-surface-container text-on-surface-variant px-2 py-0.5 rounded font-label-sm text-label-sm">24H</span>
+</div>
+<!-- Inline SVG Trend Chart -->
+<div class="w-full h-28 relative pt-2">
+<svg class="w-full h-full overflow-visible" preserveaspectratio="none" viewbox="0 0 320 80">
+<defs>
+<lineargradient id="aqiAreaGrad" x1="0%" x2="0%" y1="0%" y2="100%">
+<stop offset="0%" stop-color="#00855d" stop-opacity="0.25"></stop>
+<stop offset="100%" stop-color="#00855d" stop-opacity="0.0"></stop>
+</lineargradient>
+</defs>
+<!-- Grid Guides -->
+<line stroke="#eaedff" stroke-dasharray="3 3" stroke-width="1" x1="0" x2="320" y1="20" y2="20"></line>
+<line stroke="#eaedff" stroke-dasharray="3 3" stroke-width="1" x1="0" x2="320" y1="50" y2="50"></line>
+<!-- Area -->
+<path d="M 0,55 C 40,58 70,30 110,25 C 160,20 200,60 250,50 C 290,42 310,48 320,45 L 320,80 L 0,80 Z" fill="url(#aqiAreaGrad)"></path>
+<!-- Line Curve -->
+<path d="M 0,55 C 40,58 70,30 110,25 C 160,20 200,60 250,50 C 290,42 310,48 320,45" fill="none" stroke="#006948" stroke-linecap="round" stroke-width="2.5"></path>
+<!-- Point of current time (110, 25) -->
+<circle cx="110" cy="25" fill="#006948" r="4.5" stroke="#ffffff" stroke-width="2"></circle>
+</svg>
+</div>
+<div class="flex justify-between items-center text-outline font-label-sm text-label-sm pt-1">
+<span>00:00</span>
+<span>06:00 (Dawn)</span>
+<span class="text-primary font-bold">12:00 (Now)</span>
+<span>18:00 (Dusk)</span>
+<span>23:59</span>
+</div>
+</div>
+</div>
+<!-- SECTION 2: DRY GARBAGE & RECYCLING IoT MONITORING -->
+<div class="flex flex-col gap-5 px-margin pt-2 hidden transition-opacity duration-300" id="section-waste">
+<!-- IoT Bin Header Card -->
+<div class="bg-surface-container-lowest rounded-2xl p-5 shadow-sm flex flex-col gap-4">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-xl bg-secondary-container text-on-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[28px]" style="font-variation-settings: 'FILL' 1;">recycling</span>
+</div>
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Unit #D-304 Dry Cell</h2>
+<div class="flex items-center gap-1.5 mt-0.5">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Optical Sensor Active • Ultrasonic Calibrated</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Capacity & Weight Highlight -->
+<div class="bg-surface-container-low rounded-xl p-4 flex items-center justify-between">
+<div>
+<span class="font-body-sm text-body-sm text-on-surface-variant block">Measured Dry Weight</span>
+<div class="flex items-baseline gap-1 mt-0.5">
+<span class="font-metric-value text-metric-value text-on-surface font-extrabold">2.4</span>
+<span class="font-body-md text-body-md text-outline font-semibold">kg</span>
+</div>
+</div>
+<div class="text-right">
+<span class="font-body-sm text-body-sm text-on-surface-variant block">Volumetric Fill</span>
+<span class="font-headline-md text-headline-md text-primary font-bold">35% Full</span>
+</div>
+</div>
+<!-- Fill Level Visual Bar -->
+<div class="flex flex-col gap-1.5">
+<div class="flex justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>Bin Level: 14L of 40L</span>
+<span class="text-primary font-semibold">Optimal headroom remaining</span>
+</div>
+<div class="w-full h-3 bg-surface-container rounded-full overflow-hidden p-0.5">
+<div class="h-full bg-primary rounded-full transition-all duration-700" style="width: 35%;"></div>
+</div>
+</div>
+<!-- Waste Categorization Distribution -->
+<div class="flex flex-col gap-2 pt-1">
+<span class="font-label-md text-label-md font-bold text-on-surface">Sensory Composition Classifier</span>
+<!-- Segmented bar -->
+<div class="w-full h-3 rounded-full flex overflow-hidden">
+<div class="h-full bg-primary" style="width: 60%;" title="Dry Paper 60%"></div>
+<div class="h-full bg-secondary-fixed-dim" style="width: 30%;" title="Plastic Bottles 30%"></div>
+<div class="h-full bg-surface-dim" style="width: 10%;" title="Metal Cans 10%"></div>
+</div>
+<!-- Legend Pills -->
+<div class="grid grid-cols-3 gap-2 mt-1">
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-primary shrink-0"></span>
+<div class="min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface truncate block font-bold">60% Paper</span>
+<span class="font-body-sm text-body-sm text-outline truncate block">Cardboards</span>
+</div>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary-fixed-dim shrink-0"></span>
+<div class="min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface truncate block font-bold">30% Plastic</span>
+<span class="font-body-sm text-body-sm text-outline truncate block">Bottles/Films</span>
+</div>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-surface-dim shrink-0"></span>
+<div class="min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface truncate block font-bold">10% Metal</span>
+<span class="font-body-sm text-body-sm text-outline truncate block">Alum Cans</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Municipal Collection Routing Card -->
+<div class="bg-surface-container-lowest rounded-xl p-4 shadow-sm flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<div class="w-9 h-9 rounded-lg bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">local_shipping</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-outline uppercase font-semibold">Scheduled Pickup</span>
+<h3 class="font-label-md text-label-md font-bold text-on-surface">Tomorrow, 8:30 AM</h3>
+</div>
+</div>
+<!-- Toggle Micro-interaction -->
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" id="pickup-reminder" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+<div class="bg-surface-container-low rounded-lg p-2.5 flex items-center justify-between font-body-sm text-body-sm text-on-surface-variant">
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-primary">pin_drop</span>
+          Municipal Fleet MH-12-GB-4012
+        </span>
+<span class="bg-surface text-primary px-2 py-0.5 rounded font-label-sm text-label-sm font-bold">On Route</span>
+</div>
+</div>
+<!-- Historical Telemetry & Impact Stats -->
+<div class="bg-surface-container-lowest rounded-xl p-4 shadow-sm flex flex-col gap-3">
+<div class="flex justify-between items-center">
+<h3 class="font-headline-md text-headline-md text-on-surface">Dry Waste Audit Logs</h3>
+<span class="font-label-sm text-label-sm text-primary font-semibold">Cloud Verified</span>
+</div>
+<div class="grid grid-cols-2 gap-2.5">
+<div class="bg-surface-container-low p-3 rounded-lg flex flex-col">
+<span class="font-label-sm text-label-sm text-outline font-medium">Logged Today</span>
+<span class="font-metric-value text-metric-value text-on-surface font-bold mt-1">0.8 <span class="text-body-sm font-normal text-on-surface-variant">kg</span></span>
+</div>
+<div class="bg-surface-container-low p-3 rounded-lg flex flex-col">
+<span class="font-label-sm text-label-sm text-outline font-medium">Weekly Net</span>
+<span class="font-metric-value text-metric-value text-on-surface font-bold mt-1">4.6 <span class="text-body-sm font-normal text-on-surface-variant">kg</span></span>
+</div>
+<div class="bg-surface-container-low p-3 rounded-lg flex flex-col">
+<span class="font-label-sm text-label-sm text-outline font-medium">Monthly Total</span>
+<span class="font-metric-value text-metric-value text-on-surface font-bold mt-1">18.2 <span class="text-body-sm font-normal text-on-surface-variant">kg</span></span>
+</div>
+<div class="bg-surface-container-low p-3 rounded-lg flex flex-col">
+<span class="font-label-sm text-label-sm text-outline font-medium">6-Month Diversion</span>
+<span class="font-metric-value text-metric-value text-primary font-bold mt-1">104.5 <span class="text-body-sm font-normal text-on-surface-variant">kg</span></span>
+</div>
+</div>
+</div>
+<!-- Gamification & Rewards Banner -->
+<div class="bg-surface-container-high rounded-xl p-4 shadow-sm flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-xl bg-primary text-on-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[26px]">toll</span>
+</div>
+<div>
+<div class="flex items-baseline gap-1">
+<span class="font-headline-md text-headline-md text-on-surface font-extrabold">142</span>
+<span class="font-label-md text-label-md text-primary font-semibold">Green Points</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Eligible for ₹150 municipal grid power rebate</p>
+</div>
+</div>
+<button class="bg-primary text-on-primary px-3 py-2 rounded-lg font-label-sm text-label-sm font-bold shadow-sm active:scale-95 transition-transform shrink-0">
+        Redeem
+      </button>
+</div>
+</div>
+</div>
+<script>
+  function switchSensorTab(tab) {
+    const airSection = document.getElementById('section-air');
+    const wasteSection = document.getElementById('section-waste');
+    const airBtn = document.getElementById('tab-btn-air');
+    const wasteBtn = document.getElementById('tab-btn-waste');
+
+    if (tab === 'air') {
+      airSection.classList.remove('hidden');
+      wasteSection.classList.add('hidden');
+      
+      airBtn.className = "flex-1 py-2.5 px-3 rounded-lg font-label-md text-label-md flex items-center justify-center gap-2 bg-surface text-primary shadow-sm transition-all duration-200";
+      wasteBtn.className = "flex-1 py-2.5 px-3 rounded-lg font-label-md text-label-md flex items-center justify-center gap-2 text-on-surface-variant hover:text-on-surface transition-all duration-200";
+    } else {
+      wasteSection.classList.remove('hidden');
+      airSection.classList.add('hidden');
+      
+      wasteBtn.className = "flex-1 py-2.5 px-3 rounded-lg font-label-md text-label-md flex items-center justify-center gap-2 bg-surface text-primary shadow-sm transition-all duration-200";
+      airBtn.className = "flex-1 py-2.5 px-3 rounded-lg font-label-md text-label-md flex items-center justify-center gap-2 text-on-surface-variant hover:text-on-surface transition-all duration-200";
+    }
+  }
+</script></main></body></html>

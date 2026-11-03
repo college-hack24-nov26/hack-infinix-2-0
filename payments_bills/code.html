@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+
+<html class="" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {darkMode: "class", theme: {extend: {colors: {"outline-variant": "#bdcbb4", "primary-container": "#29b91d", "primary-fixed-dim": "#58e245", "surface-container-lowest": "#ffffff", "secondary-fixed-dim": "#91d87e", "secondary-container": "#acf597", "surface-container-highest": "#dce5d4", "inverse-surface": "#2b3327", "primary-fixed": "#77ff61", "on-background": "#161e13", primary: "#026e00", "secondary-fixed": "#acf597", "on-surface-variant": "#3e4a38", "inverse-primary": "#58e245", "on-secondary-container": "#307225", error: "#ba1a1a", "surface-container-high": "#e2ebda", "on-primary": "#ffffff", outline: "#6e7b67", "on-tertiary-fixed": "#3f001c", "surface-tint": "#026e00", "surface-container-low": "#eef7e5", "on-secondary-fixed": "#002200", secondary: "#2a6c20", "tertiary-fixed": "#ffd9e2", "surface-variant": "#dce5d4", "error-container": "#ffdad6", "on-error-container": "#93000a", "on-secondary-fixed-variant": "#0d5307", "on-secondary": "#ffffff", "surface-bright": "#f3fceb", "inverse-on-surface": "#ebf4e2", "on-primary-fixed": "#002200", "tertiary-container": "#ff6fa2", "on-tertiary": "#ffffff", "on-primary-fixed-variant": "#015300", "on-error": "#ffffff", "on-tertiary-container": "#710038", "tertiary-fixed-dim": "#ffb1c7", "on-tertiary-fixed-variant": "#8a0f48", "surface-dim": "#d4ddcc", "surface-container": "#e8f1df", "on-surface": "#161e13", tertiary: "#aa2c60", background: "#f3fceb", surface: "#f3fceb", "on-primary-container": "#014100"}, borderRadius: {DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px"}, spacing: {gutter: "1rem", "space-xl": "2rem", "space-md": "1rem", "gutter-tablet": "1.5rem", "space-xs": "0.25rem", "space-sm": "0.5rem", "margin-tablet": "2rem", margin: "1rem", "space-lg": "1.5rem"}, fontFamily: {"headline-lg": ["Plus Jakarta Sans"], "display-lg": ["Plus Jakarta Sans"], "metric-value": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "body-md": ["Inter"], "headline-md": ["Plus Jakarta Sans"], "display-lg-mobile": ["Plus Jakarta Sans"], "label-md": ["Inter"], "body-sm": ["Inter"], "label-sm": ["Inter"], "body-lg": ["Inter"], headline: ["Inter"], display: ["Inter"], body: ["Inter"], label: ["Inter"]}, fontSize: {"headline-lg": ["2rem", {lineHeight: "2.5rem", letterSpacing: "-0.02em", fontWeight: "700"}], "display-lg": ["3rem", {lineHeight: "3.5rem", letterSpacing: "-0.03em", fontWeight: "800"}], "metric-value": ["1.75rem", {lineHeight: "2rem", letterSpacing: "-0.02em", fontWeight: "700"}], "headline-lg-mobile": ["1.5rem", {lineHeight: "2rem", letterSpacing: "-0.015em", fontWeight: "700"}], "body-md": ["0.875rem", {lineHeight: "1.375rem", fontWeight: "400"}], "headline-md": ["1.25rem", {lineHeight: "1.75rem", letterSpacing: "-0.01em", fontWeight: "600"}], "display-lg-mobile": ["2.25rem", {lineHeight: "2.75rem", letterSpacing: "-0.025em", fontWeight: "800"}], "label-md": ["0.875rem", {lineHeight: "1.25rem", letterSpacing: "0.01em", fontWeight: "600"}], "body-sm": ["0.75rem", {lineHeight: "1.125rem", fontWeight: "400"}], "label-sm": ["0.6875rem", {lineHeight: "0.875rem", letterSpacing: "0.05em", fontWeight: "700"}], "body-lg": ["1rem", {lineHeight: "1.5rem", fontWeight: "400"}]}}}};</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 inset-x-0 z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-16 px-margin flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><img alt="Eco Track Brand Logo" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1UhPs6LVxE7YeJkh_DF9uVlE6WnTnnq1SBQqFhnrUg0VLzBaS4eFYvQDJwyQex05UDOQV9t0bSp5JCCGfuNEYccO7TXKZAF1al9Z_kMMf_DAcF7EW5vHrw5m0IEKrZdhjIqCgV0yjEm5AWJaCSEM-tccxdMryiQ-BQNP5sI6K3vG3U6K_jN0pqhkOfvG5hoZN7gcoqNAXdVvZPxqi8oJZn2rS9H9QlA-Lj6j-4xE6ZL"/><div class="flex flex-col min-w-0"><div class="flex items-center gap-space-xs"><span class="font-headline-md text-headline-md text-on-surface tracking-tight truncate">Eco Track</span><span class="hidden sm:inline text-outline-variant">•</span><span class="hidden sm:inline font-label-md text-label-md text-on-surface-variant truncate">Payments</span></div><div class="flex items-center gap-1.5 mt-0.5"><div class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-container/40 backdrop-blur-sm"><span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span><span class="font-label-sm text-label-sm text-on-secondary-container font-semibold tracking-wide">Pune, MH • Live</span></div></div></div></div><div class="flex items-center gap-space-xs flex-shrink-0"><button aria-label="Notifications" class="relative w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-2.5 right-2.5 w-2 h-2 rounded-full bg-primary-container ring-2 ring-surface"></span></button><a class="w-11 h-11 flex items-center justify-center rounded-full hover:opacity-90 transition-opacity" data-path="profile" href="#"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary/20" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnUAPiASoQd-awsJX126yJLKz3Y9qQi0OOZXNC51ktElUpxKc2gp3q6CYTHHrqhfmOgIFWwAd_zSZg2gKTQQ8dtPUSefUUoM-67CG_OIUbqj28kXbl5cr4a49eBPDWxhEGnL1Yw7b21wI5KodJm9neh9iRSNZ7h4zJj52DOVgqTMBhXa2p0mRt2ALWI4frdRepuFp21VfxwXxRGhLRxPwk0GFih3pFJlghT0oI8ws0"/></a></div></div></header><main class="flex flex-col relative w-full pt-16 pb-24 bg-surface min-h-screen"><div class="flex flex-col w-full px-margin space-y-space-md pb-12">
+<!-- Top Greeting & Scope Indicator -->
+<div class="flex items-center justify-between pt-space-xs">
+<div>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest block font-bold">Billing Cycle • Nov 2024</span>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface font-extrabold tracking-tight">Utility Bills &amp; Payments</h1>
+</div>
+<div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container shadow-sm">
+<span class="material-symbols-outlined text-[20px]">verified_user</span>
+</div>
+</div>
+<!-- Total Outstanding Master Banner -->
+<div class="relative overflow-hidden rounded-2xl bg-gradient-to-br from-primary to-primary-container text-on-primary p-space-md shadow-xl">
+<div class="absolute -right-10 -bottom-10 w-36 h-36 bg-secondary-fixed/15 rounded-full blur-2xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-lowest/15 backdrop-blur-md font-label-sm text-label-sm text-on-primary font-medium">
+<span class="w-2 h-2 rounded-full bg-secondary-fixed animate-ping"></span>
+          2 Invoices Outstanding
+        </span>
+<div class="flex items-center gap-1 text-on-primary/90 font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+<span>Due by 18 Nov 2024</span>
+</div>
+</div>
+<div class="pt-1">
+<span class="font-label-md text-label-md text-on-primary/80 block">Total Payable Balance</span>
+<div class="flex items-baseline gap-2">
+<span class="font-display-lg-mobile text-display-lg-mobile font-extrabold tracking-tight">₹2,660.50</span>
+<span class="font-body-sm text-body-sm text-on-primary/75">incl. taxes</span>
+</div>
+</div>
+<!-- Quick Distribution Micro-bar -->
+<div class="space-y-1.5 pt-1">
+<div class="flex justify-between font-label-sm text-label-sm text-on-primary/90">
+<span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-secondary-fixed"></span>Power: ₹2,180.50</span>
+<span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-tertiary-fixed-dim"></span>Water: ₹480.00</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-lowest/20 flex overflow-hidden p-0.5">
+<div class="h-full bg-secondary-fixed rounded-full" style="width: 82%;"></div>
+<div class="h-full bg-tertiary-fixed-dim rounded-full ml-1" style="width: 18%;"></div>
+</div>
+</div>
+<button class="mt-2 w-full h-12 rounded-xl bg-surface-container-lowest text-primary font-label-md text-label-md font-bold flex items-center justify-center gap-2 shadow-md active:scale-95 transition-all" id="payAllBtn">
+<span class="material-symbols-outlined text-[20px]">bolt</span>
+        Pay All via UPI / Cards • ₹2,660.50
+      </button>
+</div>
+</div>
+<!-- Active Utility Invoices Breakdown -->
+<div class="space-y-space-sm pt-2">
+<div class="flex items-center justify-between">
+<h2 class="font-headline-md text-headline-md text-on-surface font-bold">Unpaid Invoices</h2>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Pune Smart City Grid</span>
+</div>
+<!-- Electricity Card -->
+<div class="rounded-2xl bg-surface-container-lowest p-space-md shadow-sm space-y-space-sm transition-all">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-xl bg-secondary-container/40 flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-[26px]">flash_on</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<h3 class="font-label-md text-label-md text-on-surface font-bold">Electricity Bill</h3>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm">MSEDCL</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Consumer ID: 0284910293</p>
+</div>
+</div>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+          Pending
+        </span>
+</div>
+<div class="flex items-center justify-between pt-1">
+<div>
+<span class="font-body-sm text-body-sm text-on-surface-variant block">Bill Period</span>
+<span class="font-label-md text-label-md text-on-surface font-medium">01 Oct - 31 Oct</span>
+</div>
+<div class="text-right">
+<span class="font-body-sm text-body-sm text-on-surface-variant block">Due Amount</span>
+<span class="font-metric-value text-metric-value text-on-surface font-extrabold tracking-tight">₹2,180.50</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-2.5 pt-1">
+<button class="h-11 rounded-xl bg-surface-container-low text-on-surface-variant font-label-md text-label-md flex items-center justify-center gap-1 active:scale-95 transition-all" onclick="toggleDetails('powerDetails')">
+<span>View Details</span>
+<span class="material-symbols-outlined text-[18px]">expand_more</span>
+</button>
+<button class="h-11 rounded-xl bg-primary text-on-primary font-label-md text-label-md font-semibold flex items-center justify-center gap-1 shadow-sm active:scale-95 transition-all">
+<span>Pay ₹2,180.50</span>
+</button>
+</div>
+<!-- Collapsible Detailed telemetry info -->
+<div class="hidden pt-2 border-t-0 space-y-2" id="powerDetails">
+<div class="p-3 rounded-xl bg-surface-container-low space-y-1.5 font-body-sm text-body-sm">
+<div class="flex justify-between text-on-surface-variant">
+<span>Units Consumed</span>
+<span class="font-semibold text-on-surface">246 kWh</span>
+</div>
+<div class="flex justify-between text-on-surface-variant">
+<span>Peak Demand Charge</span>
+<span class="font-semibold text-on-surface">₹140.00</span>
+</div>
+<div class="flex justify-between text-on-surface-variant">
+<span>Green Clean Energy Rebate</span>
+<span class="font-semibold text-primary">-₹65.00</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Water Board Card -->
+<div class="rounded-2xl bg-surface-container-lowest p-space-md shadow-sm space-y-space-sm transition-all">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-xl bg-tertiary-fixed/50 flex items-center justify-center text-tertiary flex-shrink-0">
+<span class="material-symbols-outlined text-[26px]">water_drop</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<h3 class="font-label-md text-label-md text-on-surface font-bold">Water Board Bill</h3>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm">PMC</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Consumer ID: WTR-994021</p>
+</div>
+</div>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+          Pending
+        </span>
+</div>
+<div class="flex items-center justify-between pt-1">
+<div>
+<span class="font-body-sm text-body-sm text-on-surface-variant block">Bill Period</span>
+<span class="font-label-md text-label-md text-on-surface font-medium">October 2024</span>
+</div>
+<div class="text-right">
+<span class="font-body-sm text-body-sm text-on-surface-variant block">Due Amount</span>
+<span class="font-metric-value text-metric-value text-on-surface font-extrabold tracking-tight">₹480.00</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-2.5 pt-1">
+<button class="h-11 rounded-xl bg-surface-container-low text-on-surface-variant font-label-md text-label-md flex items-center justify-center gap-1 active:scale-95 transition-all" onclick="toggleDetails('waterDetails')">
+<span>View Breakdown</span>
+<span class="material-symbols-outlined text-[18px]">expand_more</span>
+</button>
+<button class="h-11 rounded-xl bg-primary text-on-primary font-label-md text-label-md font-semibold flex items-center justify-center gap-1 shadow-sm active:scale-95 transition-all">
+<span>Pay ₹480.00</span>
+</button>
+</div>
+<!-- Collapsible Detailed water info -->
+<div class="hidden pt-2 space-y-2" id="waterDetails">
+<div class="p-3 rounded-xl bg-surface-container-low space-y-1.5 font-body-sm text-body-sm">
+<div class="flex justify-between text-on-surface-variant">
+<span>Metered Volume</span>
+<span class="font-semibold text-on-surface">14,200 Liters</span>
+</div>
+<div class="flex justify-between text-on-surface-variant">
+<span>Sewerage Maintenance Charge</span>
+<span class="font-semibold text-on-surface">₹75.00</span>
+</div>
+<div class="flex justify-between text-on-surface-variant">
+<span>Water Conservation Credit</span>
+<span class="font-semibold text-primary">-₹25.00</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Gateway & Instant Payment Options Preview -->
+<div class="rounded-2xl bg-surface-container-low p-space-md space-y-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-primary">account_balance_wallet</span>
+<span class="font-label-md text-label-md text-on-surface font-bold">Fast Checkout Methods</span>
+</div>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">autorenew</span> Auto-Pay Active
+      </span>
+</div>
+<div class="grid grid-cols-4 gap-2 pt-1 text-center">
+<div class="p-2.5 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col items-center justify-center gap-1">
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">qr_code_2</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface font-medium truncate w-full">GPay / UPI</span>
+</div>
+<div class="p-2.5 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col items-center justify-center gap-1">
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">credit_card</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface font-medium truncate w-full">RuPay/Card</span>
+</div>
+<div class="p-2.5 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col items-center justify-center gap-1">
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">account_balance</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface font-medium truncate w-full">NetBanking</span>
+</div>
+<div class="p-2.5 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col items-center justify-center gap-1">
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">phone_android</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface font-medium truncate w-full">PhonePe</span>
+</div>
+</div>
+<!-- Security assurance pill -->
+<div class="flex items-center justify-center gap-1.5 pt-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-primary">lock</span>
+<span>256-bit Bank Grade Encrypted &amp; RBI Authorized Gateway</span>
+</div>
+</div>
+<!-- Past Payments & Receipts History -->
+<div class="space-y-space-sm pt-2">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<h2 class="font-headline-md text-headline-md text-on-surface font-bold">Payment History</h2>
+<span class="w-5 h-5 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm flex items-center justify-center font-bold">3</span>
+</div>
+<button class="font-label-sm text-label-sm text-primary font-semibold flex items-center gap-0.5">
+<span>Filter</span>
+<span class="material-symbols-outlined text-[16px]">tune</span>
+</button>
+</div>
+<div class="space-y-2.5">
+<!-- Record 1 -->
+<div class="rounded-xl bg-surface-container-lowest p-space-md shadow-sm flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-secondary-container/40 flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">check_circle</span>
+</div>
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-label-md text-label-md text-on-surface font-bold">Electricity • Sep 2024</span>
+</div>
+<div class="flex flex-col text-on-surface-variant font-body-sm text-body-sm">
+<span>Paid ₹2,050.00 on 15 Oct</span>
+<span class="font-label-sm text-label-sm text-outline">Txn: UPI-849201948</span>
+</div>
+</div>
+</div>
+<button class="w-10 h-10 rounded-xl bg-surface-container-low flex items-center justify-center text-primary hover:bg-surface-container active:scale-95 transition-all" onclick="downloadAlert('Sep 2024 Electricity')" title="Download Receipt">
+<span class="material-symbols-outlined text-[20px]">receipt_long</span>
+</button>
+</div>
+<!-- Record 2 -->
+<div class="rounded-xl bg-surface-container-lowest p-space-md shadow-sm flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-tertiary-fixed/50 flex items-center justify-center text-tertiary flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">check_circle</span>
+</div>
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-label-md text-label-md text-on-surface font-bold">Water Board • Sep 2024</span>
+</div>
+<div class="flex flex-col text-on-surface-variant font-body-sm text-body-sm">
+<span>Paid ₹450.00 on 14 Oct</span>
+<span class="font-label-sm text-label-sm text-outline">Txn: UPI-739210214</span>
+</div>
+</div>
+</div>
+<button class="w-10 h-10 rounded-xl bg-surface-container-low flex items-center justify-center text-primary hover:bg-surface-container active:scale-95 transition-all" onclick="downloadAlert('Sep 2024 Water')" title="Download Receipt">
+<span class="material-symbols-outlined text-[20px]">receipt_long</span>
+</button>
+</div>
+<!-- Record 3 -->
+<div class="rounded-xl bg-surface-container-lowest p-space-md shadow-sm flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-secondary-container/40 flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">check_circle</span>
+</div>
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-label-md text-label-md text-on-surface font-bold">Electricity • Aug 2024</span>
+</div>
+<div class="flex flex-col text-on-surface-variant font-body-sm text-body-sm">
+<span>Paid ₹2,310.00 on 16 Sep</span>
+<span class="font-label-sm text-label-sm text-outline">Txn: NET-551028441</span>
+</div>
+</div>
+</div>
+<button class="w-10 h-10 rounded-xl bg-surface-container-low flex items-center justify-center text-primary hover:bg-surface-container active:scale-95 transition-all" onclick="downloadAlert('Aug 2024 Electricity')" title="Download Receipt">
+<span class="material-symbols-outlined text-[20px]">receipt_long</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Smart Tips Delight Card -->
+<div class="rounded-2xl bg-secondary-container/30 p-space-md flex items-start gap-3 text-on-secondary-container">
+<div class="w-8 h-8 rounded-full bg-secondary flex items-center justify-center text-on-secondary flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[18px]">energy_savings_leaf</span>
+</div>
+<div class="space-y-1">
+<span class="font-label-md text-label-md font-bold block">Conservation Rebate Applied</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+        Great job! Your solar water heating offset saved you ₹90 across both bills this month. Keep up the high efficiency!
+      </p>
+</div>
+</div>
+</div>
+<script>
+  function toggleDetails(id) {
+    const el = document.getElementById(id);
+    if (el) {
+      el.classList.toggle('hidden');
+    }
+  }
+
+  function downloadAlert(title) {
+    const originalText = event.currentTarget.innerHTML;
+    const btn = event.currentTarget;
+    btn.innerHTML = '<span class="material-symbols-outlined text-[20px] text-primary animate-spin">sync</span>';
+    setTimeout(() => {
+      btn.innerHTML = '<span class="material-symbols-outlined text-[20px] text-primary">download_done</span>';
+      setTimeout(() => {
+        btn.innerHTML = originalText;
+      }, 2000);
+    }, 800);
+  }
+
+  document.getElementById('payAllBtn')?.addEventListener('click', function() {
+    this.classList.add('opacity-80');
+    this.innerHTML = '<span class="material-symbols-outlined text-[20px] animate-spin">progress_activity</span> Opening Payment Gateway...';
+    setTimeout(() => {
+      this.classList.remove('opacity-80');
+      this.innerHTML = '<span class="material-symbols-outlined text-[20px]">verified</span> Payment Intent Ready';
+    }, 1200);
+  });
+</script></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.04)]" data-active-classes="text-primary font-semibold"><div class="flex justify-around items-center h-16 px-space-xs"><a class="flex flex-col items-center justify-center min-w-[64px] min-h-[44px] text-on-surface-variant transition-colors group" data-path="home" href="#"><span class="material-symbols-outlined text-[24px]">home</span><span class="font-label-sm text-label-sm mt-0.5">Home</span></a><a class="flex flex-col items-center justify-center min-w-[64px] min-h-[44px] text-on-surface-variant transition-colors group" data-path="usage-and-history" href="#"><span class="material-symbols-outlined text-[24px]">bar_chart</span><span class="font-label-sm text-label-sm mt-0.5">History</span></a><a aria-current="page" class="flex flex-col items-center justify-center min-w-[64px] min-h-[44px] transition-colors group text-primary font-semibold" data-path="payments" href="#"><span class="material-symbols-outlined text-[24px]">payments</span><span class="font-label-sm text-label-sm mt-0.5">Payments</span></a><a class="flex flex-col items-center justify-center min-w-[64px] min-h-[44px] text-on-surface-variant transition-colors group" data-path="profile" href="#"><span class="material-symbols-outlined text-[24px]">person</span><span class="font-label-sm text-label-sm mt-0.5">Profile</span></a></div></nav></body></html>
